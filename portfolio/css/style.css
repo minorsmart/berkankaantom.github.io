@@ -22,6 +22,7 @@ nav ul {
     list-style: none;
     padding: 0;
     display: flex;
+    flex-wrap: wrap; /* Added for handling small screens */
 }
 
 nav ul li {
@@ -58,6 +59,30 @@ nav ul ul li {
 
 nav ul ul li a {
     padding: 10px;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    nav ul {
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul li ul {
+        position: static;
+        display: none;
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    nav ul li:hover ul {
+        display: none;
+    }
 }
 
 /* Sectie opmaak */
