@@ -1,0 +1,145 @@
+/* Algemene opmaak */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #333;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+nav ul ul li {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+nav ul ul li a {
+    padding: 10px;
+}
+
+/* Sectie opmaak */
+.section {
+    padding: 2rem;
+    background-color: #fff;
+    margin: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Over ons */
+#about {
+    background-image: url('about-image.jpg');
+    background-size: cover;
+    color: #000000;
+    text-align: center;
+}
+
+/* Diensten */
+#services {
+    background-color: #74c7b8;
+    color: #fff;
+}
+
+/* Portfolio */
+#portfolio {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Contact */
+#contact {
+    background-color: #333;
+    color: #fff;
+}
+
+#image-button {
+    background-image: url("images/kaan.png");
+    background-size: cover;
+}
+
+img {
+    border: 3px solid #000000;
+    border-radius: 14px;
+    display: inline-block;
+}
+
+#foto-grid {
+    display: inline-block;
+}
+
+/* Voeg hier je eigen stijlen toe voor de dagelijkse activiteiten */
+.daily-activities {
+    text-align: center; /* Om de dagelijkse activiteiten in het midden uit te lijnen */
+    width: 60%; /* Pas de breedte van het blok aan naar wens */
+    margin: auto; /* Om het blok in het midden van de container te plaatsen */
+}
+
+.daily-activity {
+    width: 100%; /* Volle breedte binnen het blok */
+    box-sizing: border-box;
+    margin-bottom: 1rem; /* Voeg wat ruimte toe tussen de dagelijkse activiteiten */
+    border-radius: 10px; /* Zachte randen */
+    padding: 1rem; /* Ruimte binnen het blok */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.day-container {
+    width: 48%; /* Geef elke dag een breedte van 48%, zodat ze naast elkaar passen */
+}
+
+.daily-activity h3,
+.daily-activity p {
+    margin: 0; /* Verwijder de standaard marges van h3 en p */
+    background-color: rgb(237, 248, 248); /* Donkergrijze achtergrondkleur */
+    padding: 1rem; /* Ruimte binnen het blok */
+    text-align: center; /* Plaats de tekst in het midden */
+}
+
+/* Voeg hier je eigen stijlen toe */
